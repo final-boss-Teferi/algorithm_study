@@ -3,20 +3,20 @@
 
 #include <stdio.h>
 
-int sumof(int a, int b)
+int sumof(int min, int max)
 {
 	int sum = 0;
 
-	if (b < a)
+	if (max < min)
 	{
-		int temp = b;
-		b = a;
-		a = temp;
+		int temp = max;
+		max = min;
+		min = temp;
 	}
 
-	while (a < b)
-		sum += a++;
-	return (sum += b);
+	while (min < max)
+		sum += min++;
+	return (sum += max);
 }
 
 int main(void)
