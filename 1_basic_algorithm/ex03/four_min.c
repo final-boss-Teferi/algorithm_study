@@ -1,3 +1,5 @@
+// 문제 : 네 값의 최솟값을 구하는 min4 함수를 작성하세요.
+
 #include <stdio.h>
 #include <stdlib.h>
 

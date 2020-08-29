@@ -1,3 +1,5 @@
+// 문제 : 세 값의 최솟값을 구하는 min3 함수를 작성하세요.
+
 #include <stdio.h>
 #include <stdlib.h>
 
