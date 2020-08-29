@@ -31,20 +31,22 @@ void swap(int *a, int *b)
 
 void permutation(int *arr, int start, int end)
 {
-	if (start == end)
+	if (start == end - 1)
+	{
+		printf("%d, %d, %d / med = %d\n", arr[0], arr[1], arr[2], med3(arr[0], arr[1], arr[2]));
 		return ;
+	}
 	for (int i = start; i < end; i++)
 	{
 		swap(&arr[start], &arr[i]);
 		permutation(arr, start + 1, end);
 		swap(&arr[start], &arr[i]);
 	}
-	printf("%d, %d, %d / med = %d\n", arr[0], arr[1], arr[2], med3(arr[0], arr[1], arr[2]));
 }
 
 int main(void)
 {
-	int arr[3] = { 3, 2, 2 };
+	int arr[3] = { 1, 2, 3 };
 
 	permutation(arr, 0, 3);
 }
