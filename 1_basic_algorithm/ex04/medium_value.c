@@ -14,7 +14,7 @@ int med3(int a, int b, int c)
 		else
 			return (a);
 	}
-	else if (a > c)
+	else if (a >= c)
 		return (a);
 	else if (b > c)
 		return (c);
